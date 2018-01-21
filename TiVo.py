@@ -23,9 +23,6 @@ print " Control+C to exit program"
 #----------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------
 gpio_ports = {'TiVo Pause':10000,
-              'Netflix':10001,
-              'Hulu':10002,
-              'YouTube':10003,
               'A.B.C.':786,
               'N.B.C.':782,
               'C.B.S.':784,
@@ -36,16 +33,7 @@ gpio_ports = {'TiVo Pause':10000,
               'ESPN':800,
               'The CW':787,
               'A and E':795,
-              'Cartoon Network':872,
-              'FX':753,
-              'History Channel':796,
-              'T.L.C.':764,
-              'T.N.T.':797,
-              'TV Land':731,
-              'USA':757,
-              'VH One':871,
-              'WGN':778,
-              'Travel Channel':758}
+              'Cartoon Network':872}
 #----------------------------------------------------------------------------------------------
 #----------------------------------------------------------------------------------------------
 
@@ -55,29 +43,17 @@ class device_handler(debounce_handler):
        Publishes the IP address of the Echo making the request.
     """
     TRIGGERS = {"TiVo Pause":50001,
-                "Netflix":50002,
-                "Hulu":50003,
-                "YouTube":50004,
-                "A.B.C.":50005,
-                "N.B.C.":50006,
-                "C.B.S.":50007,
-                "Fox":50008,
-                "Comedy Central":50009,
-                "T.B.S.":50010,
-                "HGTV":50011,
-                "ESPN":50012,
-                "The CW":50013,
-                "A and E":50014,
-                "Cartoon Network":50015,
-                "FX":50016,
-                "History Channel":50017,
-                "T.L.C.":50018,
-                "T.N.T.":50019,
-                "TV Land":50020,
-                "USA":50021,
-                "VH One":50022,
-                "WGN":50023,
-                "Travel Channel":50024}
+                "A.B.C.":50002,
+                "N.B.C.":50003,
+                "C.B.S.":50004,
+                "Fox":50005,
+                "Comedy Central":50006,
+                "T.B.S.":50007,
+                "HGTV":50008,
+                "ESPN":50009,
+                "The CW":50010,
+                "A and E":50011,
+                "Cartoon Network":50012}
 
     def trigger(self,port,state):
       TiVo_IP_Address = "192.168.0.47"
