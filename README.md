@@ -55,6 +55,8 @@ next type the following
 
 git clone https://github.com/shrocky2/Quick_Alexa_TiVo.git
 
+(if you get an error "git: command not found", instally git by typing: sudo apt-get install git )
+
 this will download our code to a directory called "Quick_Alexa_TiVo" (minus the quotation marks), change to this directory
 
 type: cd Quick_Alexa_TiVo
