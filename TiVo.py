@@ -62,7 +62,7 @@ class device_handler(debounce_handler):
         if port < 10000: #Numbers Less Than 10000 are channels, numbers above 10000 are Services like Netflix
                 try:
                         tn = telnetlib.Telnet(TiVo_IP_Address, "31339")
-                         tn.write('SETCH '+ str(port).replace("."," ") + '\r')
+                        tn.write('SETCH '+ str(port).replace("."," ") + '\r')
                         tn.close()
                         print "Channel Changed to", port
                 except:
